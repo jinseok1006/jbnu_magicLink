@@ -138,3 +138,24 @@ User contributed POC using Jupyter: https://github.com/tstec-polypoly/explore-ke
 
 All documentation, source code and other files in this repository are Copyright 2024 Phase Two, Inc.
 
+<br/>
+<br/>
+
+# 변경 로그
+
+모든 주요 변경 사항은 아래와 같이 기록됩니다.
+
+## 수정 기록
+
+### 수정 사항
+- **이메일 내용 수정**: 매직 링크 사용 시 클라이언트에게 보내는 메일 형식을 한국어로 변경
+- **커밋**: "email content for Korean"
+- **수정 파일**: messages_en.properties
+-  2024/09/10. by eunhyekim811
+
+### 수정 사항
+- **로그인 가이드 문구 설정**: 로그인 화면에 안내문구 삽입을 위한 설정
+- **커밋**: "login guide"
+- **수정 파일**: messages_en.properties
+-  2024/09/10. by eunhyekim811
+
