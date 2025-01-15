@@ -14,22 +14,22 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-    #   - name: Set up JDK
-    #     uses: actions/setup-java@v3
-    #     with:
-    #       java-version: "17"
-    #       distribution: "temurin"
-    #       cache: "maven"
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: "17"
+          distribution: "temurin"
+          cache: "maven"
 
-    #   - name: Build with Maven
-    #     run: mvn -B package --file pom.xml
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
 
-    #   - name: Create Release
-    #     id: create_release
-    #     uses: softprops/action-gh-release@v1
-    #     with:
-    #       files: target/*.jar
-    #       tag_name: v${{ github.run_number }}
-    #       name: Release v${{ github.run_number }}
-    #       draft: false
-    #       prerelease: false
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: target/*.jar
+          tag_name: v${{ github.run_number }}
+          name: Release v${{ github.run_number }}
+          draft: false
+          prerelease: false
